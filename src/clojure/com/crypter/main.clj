@@ -9,5 +9,7 @@
   (fn [this bundle]
     (on-ui
      (set-content-view! a
-      (make-ui [:linear-layout {}
-                [:text-view {:text "Hello from Clojure!"}]])))))
+      (make-ui [:linear-layout {:orientation :vertical
+                                :gravity :center}
+                [:text-view {:text "Crypter Application"}]
+                [:text-view {:text "by Veljko Bogosavljevic"}]])))))
